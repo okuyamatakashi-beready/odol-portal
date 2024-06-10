@@ -12,6 +12,7 @@ main {
     top: 5rem;
     height: calc(90vh - 5rem);
     width: calc(10% - 5rem);
+    z-index: 5000;
     @media screen and (max-width: 768px) {
         width: 10%;
         left: 9rem;
@@ -304,11 +305,15 @@ main {
     padding-top: 30rem;
     @media screen and (max-width: 768px) {
         padding-top: 100px;
+        padding-bottom: 70px;
     }
     .container {
         h2 {
             position: relative;
             margin-bottom: 5rem;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 50px;
+            }
             div {
                 width: 16.7%;
                 margin: auto;
@@ -339,6 +344,9 @@ main {
             justify-content: center;
             a.archive_link {
                 width: 42.23%;
+                @media screen and (max-width: 768px) {
+                    width: 85%;
+                }
                 img {
                     width: 100%;
                 }
@@ -352,19 +360,30 @@ main {
 -------------------------*/
 #movie {
     padding-top: 20rem;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 100px;
+    }
     h2 {
         text-align: center;
         margin-bottom: 5rem;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
         img {
             width: 15.78%;
+            @media screen and (max-width: 768px) {
+                width: 84px;
+            }
         }
     }
     iframe {
         width: 100%;
         height: 600px;
+        @media screen and (max-width: 768px) {
+            height: 200px;
+        }
     }
 }
-
 /*-------------------------
     partner
 -------------------------*/
@@ -376,6 +395,11 @@ main {
     box-sizing: border-box;
     margin-top: 19rem;
     position: relative;
+    @media screen and (max-width: 768px) {
+        padding-left: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .vertical {
         width: 5%;
         position: absolute;
@@ -413,22 +437,46 @@ main {
                 padding-top: 34%;
                 @include v.bg;
                 background-image: url(./../images/partner_img.jpg);
+                @media screen and (max-width: 768px) {
+                    order: 1;
+                    width: 93%;
+                    margin-left: auto;
+                    padding-top: 0;
+                    height: 210px;
+                    margin-bottom: 50px;
+                }
             }
             .partner__content {
                 order: 1;
                 padding-top: 4rem;
                 width: 60%;
+                @media screen and (max-width: 768px) {
+                    order: 2;
+                    width: 86%;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
                 b {
                     font-size: clamp(4.2rem, 3.545rem + 3.27vw, 6rem);
                     display: block;
                     font-weight: 700;
                     letter-spacing: 0.05em;
                     margin-bottom: 5rem;
+                    @media screen and (max-width: 768px) {
+                        font-size: 20px;
+                        font-weight: 700;
+                        letter-spacing: 0.05em;
+                    }
                 }
                 & > p {
                     font-size: clamp(1.4rem, 1.182rem + 1.09vw, 2rem);
                     line-height: 2;
                     margin-bottom: 13rem;
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 50px;
+                    }
                 }
                 a.header__contact {
                     background-color: #fff;
@@ -439,15 +487,26 @@ main {
                     width: 51%;
                     padding: 2.5rem 0;
                     border-radius: 100px;
+                    @media screen and (max-width: 768px) {
+                        width: 235px;
+                        margin: auto;
+                        padding: 12px 0;
+                    }
                     .flex {
                         justify-content: center;
                         align-items: center;
                         img {
                             padding-right: 1.5rem;
+                            @media screen and (max-width: 768px) {
+                                width: 16px;
+                            }
                         }
                         strong {
                             font-family: 'din';
                             font-size: clamp(2.1rem, 1.773rem + 1.64vw, 3rem);
+                            @media screen and (max-width: 768px) {
+                                font-size: 19px;
+                            }
                         }
                     }
                     p {
@@ -455,6 +514,9 @@ main {
                         color: #000;
                         font-size: 14px;
                         font-weight: 500;
+                        @media screen and (max-width: 768px) {
+                            font-size: 10px;
+                        }
                     }
                 }
             }
